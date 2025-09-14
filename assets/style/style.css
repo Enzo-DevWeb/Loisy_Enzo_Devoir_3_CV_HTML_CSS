@@ -9,14 +9,169 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Raleway-bold';
     src: url('../fonts/Raleway/Raleway-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Raleway-italic';
     src: url('../fonts/Raleway/Raleway-Italic.woff') format('woff');
     font-weight: 400;
+}
+
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    color: #17abb3;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.title {
+    padding: 1.5rem;
+}
+
+.title * {
+    color: #fff;
+    justify-self: center;
+    margin: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 0 0 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box a {
+    text-decoration: none;
+    padding-left: 0.5rem;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    background-color: #17abb3;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+}
+
+main {
+    display: flex;
+    color: #333;
+}
+
+footer {
+    background-color: #17abb3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0 0 0; 
+}
+
+.core {
+    max-width: 1160px;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+div {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.aside {
+    width: 25%;
+    background-color: #e3e3e3;
+    padding: 0 1rem;
+}
+
+.star-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 0 3rem;
+}
+
+.text-profile {
+    text-indent: 2em;
+}
+
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.header-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.profile-photo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 5rem;
+    border-color: #fff;
+    border-width: 0.3rem;
+    border-style: solid;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+hr {
+    opacity: 30%;
+}
+
+.bold {
+    font-family: 'Raleway-bold', sans-serif;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li::marker {
+    color: #17abb3;
+    font-size: 1.5rem;
+}
+
+.updated-msg {
+    color: #fff;
+    font-family: 'Raleway-italic', sans-serif;
+}
+
+.date {
+    color: #17abb3;
 }
