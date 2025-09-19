@@ -53,10 +53,12 @@ h1 {
 
 .box {
     flex: 0 0 50%;
-    height: 50%;
+    height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding-bottom: 0.5rem;
 }
 
 .box a {
@@ -71,7 +73,7 @@ header {
     color: #fff;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8rem;
+    padding: 2rem 8rem;
 }
 
 main {
@@ -117,11 +119,16 @@ div {
 
 .text-profile {
     text-indent: 2em;
+    text-align: justify;
 }
 
 .icon {
     width: 2.5rem;
     height: 2.5rem;
+}
+
+.icon:hover {
+    opacity: 75%;
 }
 
 .header-icon {
@@ -132,10 +139,12 @@ div {
 .profile-photo {
     width: 8rem;
     height: 8rem;
-    border-radius: 5rem;
+    border-radius: 50%;
     border-color: #fff;
     border-width: 0.3rem;
     border-style: solid;
+    object-fit: cover;
+    cursor: zoom-in;
 }
 
 .flex {
@@ -174,4 +183,10 @@ ul li::marker {
 
 .date {
     color: #17abb3;
+}
+
+.hover:hover {
+    background-color: #e3e3e3;
+    border-left: 0.35rem solid #17abb3;
+    padding-left: 0.8rem;
 }
